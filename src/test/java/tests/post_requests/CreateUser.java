@@ -12,13 +12,14 @@ import java.util.Map;
 
 public class CreateUser extends TestBase {
 
+//    TODO Complete the PUT / PATCH / DELETE Classes
     @Test
     public void createUser() {
         Map<String, String> userObject = new HashMap<>();
         userObject.put("name", "David Miller");
         userObject.put("job", "Athlete");
         System.out.println(userObject);
-        Response response = postEmployeeEndPoint(userObject);
+        postEmployeeEndPoint(userObject);
     }
 
     private Response postEmployeeEndPoint(Object object) {
